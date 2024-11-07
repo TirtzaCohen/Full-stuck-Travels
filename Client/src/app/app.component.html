@@ -1,0 +1,22 @@
+<div class="menu">
+  <div class="right">
+    <img src="../assets/img/logo.png" class="logo">
+    
+    <a routerLink="./Home">בית</a>
+    <a routerLink="./Trips">הטיולים שלנו</a>
+    <a routerLink="./PersonalArea" *ngIf="sCurrent.User.Name">לאזור האישי</a> 
+    <a routerLink="./Users" *ngIf="sCurrent.Managger==true">המשתמשים שלנו</a>   
+  </div>
+
+  <div class="left">
+      <p>שלום {{who_is_now()}}</p>
+      <button routerLink="./SignIn">כניסה</button>
+      <button routerLink="./SignUp">הרשמה</button>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
+
+<div class="footer">
+  <p>@Tirtza Cohen</p>
+</div>

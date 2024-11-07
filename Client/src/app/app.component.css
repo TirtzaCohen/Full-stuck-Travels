@@ -1,0 +1,54 @@
+div.menu {
+    direction: rtl;
+    font-family: Tahoma	;
+    justify-content:space-between;
+    display: flex;
+    overflow: auto;
+    white-space: nowrap;
+    height: 70px;
+  }
+  
+  div.menu a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px;
+    line-height: 2.5;
+  }
+  div.menu a:hover{
+    text-decoration-line: underline;
+  }
+  .right{
+    display: flex;
+  }
+  .left{
+    display: flex;
+  }
+  button{
+  width: 80px;
+  margin: 5px;
+  border-radius: 40px;
+  border-color: black;
+  }
+  .logo{
+  padding: 0;
+  height: 70px;
+  }
+  div.manu.logo a:hover{
+    background-color: none;
+  }
+  .footer{
+  width:100%;
+  text-align: center;
+  padding: 0;
+  }
+  p{
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+  
+  
+  

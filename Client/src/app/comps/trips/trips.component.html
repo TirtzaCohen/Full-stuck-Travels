@@ -1,0 +1,14 @@
+<body>
+    <button *ngFor="let t of TravelTypes" (click)="sort(t.TypeCode)" class="sorts">{{t.TypeName}}</button>
+    <button class="sorts" (click)=sort(-1) >לכל הטיולים</button>
+    <div class="allTrips">
+    <div class="card" *ngFor="let trip of tempTrips" >
+        <img src="../../../assets/img/{{trip.TripDestination}}/{{trip.TripDestination}}.jpg" alt="Avatar" style="width:100%">
+        <div class="container" >
+          <h4><b>{{trip.TripDestination}}</b></h4>
+          <p>{{trip.Date | date: 'dd/MM/yyyy'}}</p>
+          <button (click)="goToTripDet(trip.TripCode)">לפרטים נוספים</button>
+        </div>
+      </div>
+    </div>
+    </body>

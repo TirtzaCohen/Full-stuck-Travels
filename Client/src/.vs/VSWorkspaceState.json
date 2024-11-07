@@ -1,0 +1,17 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\app",
+    "\\app\\comps",
+    "\\app\\comps\\home",
+    "\\app\\comps\\personal-area",
+    "\\app\\comps\\sign-in",
+    "\\app\\comps\\sign-up",
+    "\\app\\comps\\trip-details",
+    "\\app\\comps\\trips",
+    "\\assets",
+    "\\assets\\img"
+  ],
+  "SelectedNode": "\\app\\comps\\trips\\trips.component.ts",
+  "PreviewInSolutionExplorer": false
+}

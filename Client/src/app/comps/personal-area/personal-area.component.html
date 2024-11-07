@@ -1,0 +1,92 @@
+<body>
+
+  <p (click)="selected(Edit)" class="h">לעריכת פרטים אישיים</p>
+    <div class="container" [hidden]="b_edit">
+        <div class="Edit-card">
+          <div class="Edit-card-header">
+          </div>
+          <div class="Edit-card-body">
+            <form [formGroup]="frm" (ngSubmit)="update()">
+              <div class="form-group">
+                <label for="name">שם:</label>
+                <input type="text" id="name" name="name" formControlName="name" [(ngModel)]="u.Name">
+                <div *ngIf="name.invalid && (name.touched || name.dirty)">
+                  <p *ngIf="name.hasError('required')">שדה חובה</p>
+                  <p *ngIf="name.hasError('minlength')">קצר מידי...</p>
+                  <p *ngIf="name.hasError('pattern')">אותיות בלבד</p>
+                </div>
+             </div>
+             <div class="form-group">
+                <label for="family">משפחה:</label>
+                <input type="text" id="family" name="family" formControlName="family" [(ngModel)]="u.Family">
+                <div *ngIf="family.invalid && (family.touched || family.dirty)">
+                  <p *ngIf="family.hasError('required')">שדה חובה</p>
+                  <p *ngIf="family.hasError('minlength')">קצר מידי...</p>
+                  <p *ngIf="family.hasError('pattern')">אותיות בלבד</p>
+                </div>
+             </div>
+             <div class="form-group">
+                <label for="phone">טלפון:</label>
+                <input type="text" id="phone" name="phone" formControlName="phone" [(ngModel)]="u.Phone">
+                <div *ngIf="phone.invalid && (phone.touched || phone.dirty)">
+                  <p *ngIf="phone.hasError('required')">שדה חובה</p>
+                  <p *ngIf="phone.hasError('minlength') || phone.hasError('maxlength') || phone.hasError('pattern')">לא תקין</p>
+                </div>
+             </div>
+              <div class="form-group">
+                <label for="email">מייל:</label>
+                <input type="text" id="email" name="email" formControlName="email" [(ngModel)]="u.Email">
+                <div *ngIf="email.invalid && (email.touched || email.dirty)">
+                  <p *ngIf="email.hasError('required')">שדה חובה</p>
+                  <p *ngIf="email.hasError('email')">לא תקין</p>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="password">סיסמא:</label>
+                <input type="password" id="password" name="password" formControlName="password" [(ngModel)]="u.LoginPassword">
+                <div *ngIf="password.invalid && (password.touched || password.dirty)">
+                  <p *ngIf="password.hasError('required')">שדה חובה</p>
+                  <p *ngIf="password.hasError('minlength')">קצר מידי...</p>
+                  <p *ngIf="password.hasError('pattern')">אותיות וסמלים בלבד</p>
+                </div>
+              </div>
+              <div class="diz_chec" >
+                <input type="checkbox" id="firstaid" name="firstaid" value="True" [(ngModel)]="u.FirstAidCertificate" class="chec">
+                <label for="firstaid">יש לי תעודת עזרה ראשונה</label>
+             </div>
+              <button type="submit" class="Edit-btn" [disabled]="frm.invalid">עידכון</button>
+            </form>
+          </div>
+        </div>
+    </div>
+        
+
+      <p (click)="selected(MyTrips)" class="h">הטיולים שנרשמתי אליהם</p>
+      <div [hidden]="b_mytrips">
+      <br>
+      <button *ngFor="let t of TravelTypes" (click)="sort(t.TypeCode)" class="sorts">{{t.TypeName}}</button>
+      <button class="sorts" (click)=sort(-1) >לכל הטיולים</button>
+      <table id="MyTrips">  
+        <tr>
+          <th>טיול</th>
+          <th>תאריך</th>
+          <th>סוג</th>
+          <th>מחיר</th>
+        </tr>
+        <tr *ngFor="let trip of tempTrips">
+          <th>{{trip.TripDestination}}</th>
+          <th>{{trip.Date}}</th>
+          <th>{{trip.NameType}}</th>
+          <th>{{trip.Price}}</th>
+          <th ><button *ngIf="NotPass(trip.Date!)" (click)="cancel(trip)">ביטול</button></th>
+        </tr>
+      </table>
+      </div>
+
+
+      <p (click)= "Remove()" class="h">ביטול רישום</p>
+      <p [hidden]="T_F" class="err">אין אפשרות לבטל רישום מהאתר כשיש לך טיולים עתידיים</p>
+      <br>
+
+    </body>
+    

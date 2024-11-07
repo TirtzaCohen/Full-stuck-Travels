@@ -1,0 +1,25 @@
+body{
+    direction: rtl;
+    font-family: Tahoma	;
+    background-color: #F8F7F2;
+    text-align: center;
+}
+
+section{
+    width:1140px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+img{
+    padding: 0;
+    height: 600px;
+}
+
+button{
+    padding: 5px;
+    width: 150px;
+    margin: 10px;
+    border-radius: 40px;
+    border-color: #DCC3C3;
+    }

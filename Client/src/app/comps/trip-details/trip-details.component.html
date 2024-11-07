@@ -1,0 +1,39 @@
+
+<div class="grid-container">
+  <div class="grid-item item1">
+    <h1>{{trip.TripDestination}}</h1>
+  </div>
+  <div class="grid-item item2">
+    <img src="../../../assets/img/{{trip.TripDestination}}/{{trip.TripDestination}}.jpg" alt="Avatar" style="width:100%" class="img">
+  </div>
+  <div class="grid-item item3">
+    <i class="gg-calendar-dates"></i>
+    <p>{{trip.Date | date: 'dd/MM/yyyy'}}</p>
+  </div>  
+  <div class="grid-item item4">
+    <i class="gg-time"></i>
+    <p>{{trip.DepartureTime}}</p>
+  </div>
+  <div class="grid-item item5">
+    <p>עלות הטיול: {{trip.Price}} ש"ח</p>
+    <p>משך הטיול: {{trip.TripDurationHours}} שעות</p>
+    <p>הטיול מיועד ל{{trip.NameType}}</p>
+    <button (click)="Display()" class="b1">הרשמו עכשיו</button>
+  </div>
+
+  <div [hidden]="hidd" class="order">
+    <p>?כמה אנשים אתם</p>
+    <input type="number" [(ngModel)]="p">
+    <br>
+    <button (click)="OrderPlace()" class="b2">הזמן</button>
+  </div>
+</div>
+
+  <div class="galery" >
+  <img *ngFor="let img of images" src="../../../assets/img/{{trip.TripDestination}}/{{img}}.jpg" class="gImg ">
+  <p [hidden]="h">אינך רשום למערכת</p>
+  </div>
+
+
+
+

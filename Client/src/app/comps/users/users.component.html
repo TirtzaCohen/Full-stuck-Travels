@@ -1,0 +1,22 @@
+<body>
+<table id="users">
+  <tr>
+    <th>קוד</th>
+    <th>שם</th>
+    <th>משפחה</th>
+    <th>טלפון</th>
+    <th>מייל</th>
+    <th>תעודת עזרה ראשונה</th>
+  </tr>
+  <tr *ngFor="let user of Users">
+    <th>{{user.UserCode}}</th>
+    <th>{{user.Name}}</th>
+    <th>{{user.Family}}</th>
+    <th>{{user.Phone}}</th>
+    <th>{{user.Email}}</th>
+    <th>{{user.FirstAidCertificate}}</th>
+  </tr>
+</table>
+</body>
+
+

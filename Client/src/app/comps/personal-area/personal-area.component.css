@@ -1,0 +1,149 @@
+body {
+      direction: rtl;
+      font-family: 'Arial', sans-serif;
+      background-color: #F8F7F2;
+      margin: 0;
+      align-items: center;
+      height: auto;
+    }
+    
+    .container {
+      width: 100%;
+      max-width: 400px;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    
+    .Edit-card {
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    
+    .Edit-card-header {
+      background-color: black;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+    }
+    
+    .Edit-card-body {
+      padding: 20px;
+    }
+    
+    .form-group {
+      margin-bottom: 15px;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #333;
+    }
+    
+    input {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+    
+    .Edit-btn {
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+      background-color: #F8F7F2;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    
+    .Edit-btn:hover {
+      background-color: black;
+    }
+  
+    .chec{
+      width: auto;
+      margin-bottom: 15px;
+      padding: 8px;
+      box-sizing: border-box;
+    }  
+  
+    .diz_chec{
+      display:flex;
+      justify-content:flex-start;
+    }
+    
+    
+    .h{
+      text-align: right;
+      text-decoration: underline;
+    }
+    
+  
+  #MyTrips {
+    text-align: center;
+    margin: 0;
+    font-family: Tahoma	;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #MyTrips td, #MyTrips th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #MyTrips tr:nth-child(even){background-color: #F8F7F2;}
+  
+  #MyTrips tr:hover {background-color: #F8F7F2;}
+  
+  #MyTrips th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: black;
+    color: white;
+  }
+  .err{
+    color: red;
+    font-weight: bold;
+  }
+
+  .sorts{
+    margin: 10px;
+    display: inline-block;
+    background-color: #fff000;
+  border-radius: 12px;
+  color: #000;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px 15px;
+  text-align: center;
+  transition: 200ms;
+  box-sizing: border-box;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  }
+  .sorts:not(:disabled):hover,
+  .sorts:not(:disabled):focus{
+    outline: 0;
+  background: #f4e603;
+  box-shadow: 0 0 0 2px rgba(0,0,0,.2), 0 3px 8px 0 rgba(0,0,0,.15);
+  }
+  .sorts:disabled{
+    filter: saturate(0.2) opacity(0.5);
+  -webkit-filter: saturate(0.2) opacity(0.5);
+  cursor: not-allowed;
+  }
+  
+  
+  
+  
+    

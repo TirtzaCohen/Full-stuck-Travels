@@ -1,0 +1,86 @@
+body {
+  direction: rtl;
+    font-family: 'Arial', sans-serif;
+    background-color: #F8F7F2;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .login-card {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .login-card-header {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  .login-card-body {
+    padding: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .login-btn {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #F8F7F2;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .login-btn:hover {
+    color: #fff;
+    background-color: black;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);  
+  }
+
+  .chec{
+    width: auto;
+    margin-bottom: 15px;
+    padding: 8px;
+    box-sizing: border-box;
+  }  
+
+  .diz_chec{
+    display:flex;
+    justify-content:flex-start;
+  }
+  
+  
+  

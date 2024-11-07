@@ -1,0 +1,33 @@
+body {
+    direction: rtl;
+    background-color: #F8F7F2;
+    text-align: center;
+  }
+
+#users {
+  background-color: #F8F7F2;
+  text-align: center;
+  margin: 0;
+  font-family: Tahoma	;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#users td, #users th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#users tr:nth-child(even){background-color: #F8F7F2;}
+
+#users tr:hover {background-color: #F8F7F2;}
+
+#users th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  color: black;
+}
+
+
+
